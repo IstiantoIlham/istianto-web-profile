@@ -1,6 +1,6 @@
 import React from "react"
 
-function SunIcon(className?: string) {
+function SunIcon({ className }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

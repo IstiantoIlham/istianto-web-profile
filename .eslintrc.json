@@ -2,9 +2,11 @@
   "extends": [
     "next/core-web-vitals",
     "next/typescript",
-    "plugin:tailwindcss/recommended"
+    "plugin:tailwindcss/recommended",
+    "prettier"
   ],
   "rules": {
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "prefer-const": "error"
   }
 }
