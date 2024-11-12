@@ -1,22 +1,9 @@
-import Image from "next/image"
 import React from "react"
 
 interface ImagePath {
   path: string
   name: string
 }
-
-const imageRootPath = "/techLogos"
-const imagePath: ImagePath[] = [
-  { path: `${imageRootPath}/go.svg`, name: "golang" },
-  { path: `${imageRootPath}/javascript.svg`, name: "javascript" },
-  { path: `${imageRootPath}/laravel.svg`, name: "laravel" },
-  { path: `${imageRootPath}/mongodb.svg`, name: "mongodb" },
-  { path: `${imageRootPath}/mysql.svg`, name: "mysql" },
-  { path: `${imageRootPath}/nextjs.svg`, name: "nextjs" },
-  { path: `${imageRootPath}/nodejs.svg`, name: "nodejs" },
-  { path: `${imageRootPath}/typescript.svg`, name: "typescript" },
-]
 
 function About() {
   return (
