@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "istianto-portfolio",
+      "script": "bun",
+      "args": "start"
+    }
+  ]
+}
+
