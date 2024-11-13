@@ -1,10 +1,5 @@
 import React from "react"
 
-interface ImagePath {
-  path: string
-  name: string
-}
-
 function About() {
   return (
     <section className="flex-column h-screen items-center justify-center">
