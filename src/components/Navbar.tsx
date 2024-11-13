@@ -44,9 +44,9 @@ function Navbar() {
     <nav className="navbar fixed z-10 bg-base-200 p-6">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-circle btn-ghost">
+          <button tabIndex={0} role="button" className="btn btn-circle btn-ghost">
             <MenuIcon className="size-7" />
-          </div>
+          </button>
           <ul
             tabIndex={0}
             className="menu dropdown-content mt-2 w-40 rounded-box bg-base-200 p-2 shadow"
