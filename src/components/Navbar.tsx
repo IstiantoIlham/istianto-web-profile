@@ -2,6 +2,7 @@
 
 import BugIcon from "@/assets/BugIcon"
 import ComputerIcon from "@/assets/ComputerIcon"
+import LinkIcon from "@/assets/LinkIcon"
 import MenuIcon from "@/assets/MenuIcon"
 import MoonIcon from "@/assets/MoonIcon"
 import SunIcon from "@/assets/SunIcon"
@@ -44,24 +45,54 @@ function Navbar() {
     <nav className="navbar fixed z-10 bg-base-200 p-6">
       <div className="navbar-start">
         <div className="dropdown">
-          <button tabIndex={0} role="button" className="btn btn-circle btn-ghost">
-            <MenuIcon className="size-7" />
+          <button
+            tabIndex={0}
+            role="button"
+            className="btn btn-circle btn-ghost"
+          >
+            <LinkIcon className="size-7" />
           </button>
           <ul
             tabIndex={0}
             className="menu dropdown-content mt-2 w-40 rounded-box bg-base-200 p-2 shadow"
           >
             <li>
-              <p className="base-medium">Homepage</p>
+              <Link
+                href={"https://github.com/IstiantoIlham"}
+                className="base-medium"
+                target="_blank"
+              >
+                Github
+              </Link>
             </li>
             <li>
-              <p className="base-medium">About</p>
+              <Link
+                href={"https://www.linkedin.com/in/istianto-ilham/"}
+                className="base-medium"
+                target="_blank"
+              >
+                LinkedIn
+              </Link>
             </li>
             <li>
-              <p className="base-medium">Portfolio</p>
+              <Link
+                href={"https://www.instagram.com/hello.anto/"}
+                className="base-medium"
+                target="_blank"
+              >
+                Instagram
+              </Link>
             </li>
-            <li className="block rounded-md bg-primary text-base-100 md:hidden">
-              <p className="base-medium">Contact Me</p>
+            <li className="rounded-btn bg-primary text-primary-content md:hidden">
+              <Link
+                className="base-medium"
+                target="_blank"
+                href={
+                  "https://api.whatsapp.com/send/?phone=6281230729945&text&type=phone_number&app_absent=0"
+                }
+              >
+                Contact Me
+              </Link>
             </li>
           </ul>
         </div>
@@ -70,7 +101,15 @@ function Navbar() {
         Anto<span className="text-primary">Portfolio</span>
       </Link>
       <div className="navbar-end flex items-center gap-2">
-        <button className="btn btn-primary hidden md:block">Contact Me</button>
+        <Link
+          className="btn hidden bg-primary text-primary-content md:flex"
+          target="_blank"
+          href={
+            "https://api.whatsapp.com/send/?phone=6281230729945&text&type=phone_number&app_absent=0"
+          }
+        >
+          Contact Me
+        </Link>
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-circle btn-ghost">
             {mounted ? themeIcon : <SunIcon className="size-6 animate-spin" />}
