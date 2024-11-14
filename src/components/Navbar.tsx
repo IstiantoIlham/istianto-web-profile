@@ -45,6 +45,7 @@ function Navbar() {
       <div className="navbar-start">
         <div className="dropdown">
           <button
+            name="social_media"
             tabIndex={0}
             role="button"
             className="btn btn-circle btn-ghost"
