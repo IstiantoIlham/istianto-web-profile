@@ -3,7 +3,6 @@
 import BugIcon from "@/assets/BugIcon"
 import ComputerIcon from "@/assets/ComputerIcon"
 import LinkIcon from "@/assets/LinkIcon"
-import MenuIcon from "@/assets/MenuIcon"
 import MoonIcon from "@/assets/MoonIcon"
 import SunIcon from "@/assets/SunIcon"
 import { useTheme } from "next-themes"

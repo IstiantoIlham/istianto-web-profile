@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import React from "react"
 
 function LinkIcon({ className }: { className: string }) {
   return (
